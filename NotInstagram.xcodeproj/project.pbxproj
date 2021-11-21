@@ -16,6 +16,14 @@
 		0DABD84A274AD9EA00446A6F /* NotInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD849274AD9EA00446A6F /* NotInstagramTests.swift */; };
 		0DABD854274AD9EA00446A6F /* NotInstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD853274AD9EA00446A6F /* NotInstagramUITests.swift */; };
 		0DABD856274AD9EA00446A6F /* NotInstagramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD855274AD9EA00446A6F /* NotInstagramUITestsLaunchTests.swift */; };
+		0DABD869274ADB0900446A6F /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD868274ADB0900446A6F /* MainTabController.swift */; };
+		0DABD86B274ADBFB00446A6F /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD86A274ADBFB00446A6F /* FeedController.swift */; };
+		0DABD86D274ADC0A00446A6F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD86C274ADC0A00446A6F /* SearchController.swift */; };
+		0DABD86F274ADC1C00446A6F /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD86E274ADC1C00446A6F /* ImageSelectorController.swift */; };
+		0DABD871274ADC2B00446A6F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD870274ADC2B00446A6F /* NotificationController.swift */; };
+		0DABD873274ADC3700446A6F /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD872274ADC3700446A6F /* ProfileController.swift */; };
+		0DE2D9B2274AF94C00CFEBC5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */; };
+		0DE2D9B4274AFA7100CFEBC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B3274AFA7100CFEBC5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		0DABD84F274AD9EA00446A6F /* NotInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DABD853274AD9EA00446A6F /* NotInstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotInstagramUITests.swift; sourceTree = "<group>"; };
 		0DABD855274AD9EA00446A6F /* NotInstagramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotInstagramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DABD868274ADB0900446A6F /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		0DABD86A274ADBFB00446A6F /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		0DABD86C274ADC0A00446A6F /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		0DABD86E274ADC1C00446A6F /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		0DABD870274ADC2B00446A6F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0DABD872274ADC3700446A6F /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		0DE2D9B3274AFA7100CFEBC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,12 @@
 		0DABD831274AD9E800446A6F /* NotInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				0DABD867274ADA8A00446A6F /* Model */,
+				0DABD866274ADA8700446A6F /* View */,
+				0DABD865274ADA8300446A6F /* ViewModel */,
+				0DABD864274ADA7F00446A6F /* Controller */,
+				0DABD863274ADA7B00446A6F /* API */,
+				0DABD862274ADA6F00446A6F /* Utils */,
 				0DABD832274AD9E800446A6F /* AppDelegate.swift */,
 				0DABD834274AD9E800446A6F /* SceneDelegate.swift */,
 				0DABD836274AD9E800446A6F /* ViewController.swift */,
@@ -125,6 +147,56 @@
 				0DABD855274AD9EA00446A6F /* NotInstagramUITestsLaunchTests.swift */,
 			);
 			path = NotInstagramUITests;
+			sourceTree = "<group>";
+		};
+		0DABD862274ADA6F00446A6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2D9B3274AFA7100CFEBC5 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0DABD863274ADA7B00446A6F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0DABD864274ADA7F00446A6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0DABD868274ADB0900446A6F /* MainTabController.swift */,
+				0DABD86A274ADBFB00446A6F /* FeedController.swift */,
+				0DABD86C274ADC0A00446A6F /* SearchController.swift */,
+				0DABD86E274ADC1C00446A6F /* ImageSelectorController.swift */,
+				0DABD870274ADC2B00446A6F /* NotificationController.swift */,
+				0DABD872274ADC3700446A6F /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0DABD865274ADA8300446A6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DABD866274ADA8700446A6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DABD867274ADA8A00446A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +331,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DABD837274AD9E800446A6F /* ViewController.swift in Sources */,
+				0DE2D9B2274AF94C00CFEBC5 /* FeedCell.swift in Sources */,
+				0DABD86F274ADC1C00446A6F /* ImageSelectorController.swift in Sources */,
+				0DABD871274ADC2B00446A6F /* NotificationController.swift in Sources */,
+				0DABD86D274ADC0A00446A6F /* SearchController.swift in Sources */,
 				0DABD833274AD9E800446A6F /* AppDelegate.swift in Sources */,
+				0DABD873274ADC3700446A6F /* ProfileController.swift in Sources */,
+				0DABD86B274ADBFB00446A6F /* FeedController.swift in Sources */,
+				0DABD869274ADB0900446A6F /* MainTabController.swift in Sources */,
+				0DE2D9B4274AFA7100CFEBC5 /* Extensions.swift in Sources */,
 				0DABD835274AD9E800446A6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +525,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +554,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
