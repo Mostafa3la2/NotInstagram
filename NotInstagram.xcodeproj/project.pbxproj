@@ -24,6 +24,10 @@
 		0DABD873274ADC3700446A6F /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABD872274ADC3700446A6F /* ProfileController.swift */; };
 		0DE2D9B2274AF94C00CFEBC5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */; };
 		0DE2D9B4274AFA7100CFEBC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B3274AFA7100CFEBC5 /* Extensions.swift */; };
+		0DE2D9B7274C593E00CFEBC5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B6274C593E00CFEBC5 /* LoginController.swift */; };
+		0DE2D9B9274C594A00CFEBC5 /* RegisterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9B8274C594A00CFEBC5 /* RegisterationController.swift */; };
+		0DE2D9BB275190D800CFEBC5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9BA275190D700CFEBC5 /* CustomTextField.swift */; };
+		0DE2D9BD27519D1000CFEBC5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2D9BC27519D1000CFEBC5 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		0DABD872274ADC3700446A6F /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		0DE2D9B3274AFA7100CFEBC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0DE2D9B6274C593E00CFEBC5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0DE2D9B8274C594A00CFEBC5 /* RegisterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationController.swift; sourceTree = "<group>"; };
+		0DE2D9BA275190D700CFEBC5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0DE2D9BC27519D1000CFEBC5 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,7 @@
 		0DABD864274ADA7F00446A6F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0DE2D9B5274C592E00CFEBC5 /* Authentication */,
 				0DABD868274ADB0900446A6F /* MainTabController.swift */,
 				0DABD86A274ADBFB00446A6F /* FeedController.swift */,
 				0DABD86C274ADC0A00446A6F /* SearchController.swift */,
@@ -180,6 +189,7 @@
 		0DABD865274ADA8300446A6F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0DE2D9BC27519D1000CFEBC5 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				0DE2D9B1274AF94C00CFEBC5 /* FeedCell.swift */,
+				0DE2D9BA275190D700CFEBC5 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +208,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0DE2D9B5274C592E00CFEBC5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2D9B6274C593E00CFEBC5 /* LoginController.swift */,
+				0DE2D9B8274C594A00CFEBC5 /* RegisterationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,13 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE2D9BB275190D800CFEBC5 /* CustomTextField.swift in Sources */,
 				0DABD837274AD9E800446A6F /* ViewController.swift in Sources */,
+				0DE2D9B7274C593E00CFEBC5 /* LoginController.swift in Sources */,
 				0DE2D9B2274AF94C00CFEBC5 /* FeedCell.swift in Sources */,
 				0DABD86F274ADC1C00446A6F /* ImageSelectorController.swift in Sources */,
 				0DABD871274ADC2B00446A6F /* NotificationController.swift in Sources */,
+				0DE2D9BD27519D1000CFEBC5 /* AuthenticationViewModel.swift in Sources */,
 				0DABD86D274ADC0A00446A6F /* SearchController.swift in Sources */,
 				0DABD833274AD9E800446A6F /* AppDelegate.swift in Sources */,
 				0DABD873274ADC3700446A6F /* ProfileController.swift in Sources */,
+				0DE2D9B9274C594A00CFEBC5 /* RegisterationController.swift in Sources */,
 				0DABD86B274ADBFB00446A6F /* FeedController.swift in Sources */,
 				0DABD869274ADB0900446A6F /* MainTabController.swift in Sources */,
 				0DE2D9B4274AFA7100CFEBC5 /* Extensions.swift in Sources */,

@@ -109,3 +109,22 @@ extension UIView {
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
 }
+
+extension UIButton{
+    func attributedTitle(normalText:String,boldText:String){
+        let atts:[NSAttributedString.Key:Any] = [.foregroundColor:UIColor(white: 1, alpha: 0.87),.font:UIFont.systemFont(ofSize: 16)]
+        let attributedTitle = NSMutableAttributedString(string: normalText, attributes: atts)
+        let boldAtts:[NSAttributedString.Key:Any] = [.foregroundColor:UIColor(white: 1, alpha: 0.87),.font:UIFont.boldSystemFont(ofSize: 16)]
+        attributedTitle.append(NSAttributedString(string: boldText, attributes: boldAtts))
+        setAttributedTitle(attributedTitle, for: .normal)
+    }
+}
+extension UIViewController{
+    func configureGradientLayer(){
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor.purple.cgColor,UIColor.systemBlue.cgColor]
+        gradient.locations = [0,1]
+        view.layer.addSublayer(gradient)
+        gradient.frame = view.frame
+    }
+}
